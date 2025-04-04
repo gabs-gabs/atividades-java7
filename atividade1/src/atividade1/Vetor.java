@@ -10,7 +10,6 @@ public class Vetor {
         int soma = 0;
         float media = 0;
 
-
         for (int i = 0; i < numeros.length; i++) {
             System.out.println("Digite um numero");
             numeros[i] = ler.nextInt();
@@ -18,22 +17,21 @@ public class Vetor {
         }
 
         for (int i = 0; i < numeros.length; i++) {
-            if(numeros[i]%2==0){
+            if (numeros[i] % 2 == 0) {
                 System.out.println("Numeros pares: " + numeros[i]);
             }
         }
         for (int i = 0; i < numeros.length; i++) {
-            if(numeros[i]%2!=0){
+            if (numeros[i] % 2 != 0) {
                 System.out.println("Numeros impares: " + numeros[i]);
             }
         }
 
-        media = (float)soma/10;
-        
+        media = (float) soma / 10;
+
         System.out.println("Média: " + media);
         System.out.println("Soma: " + soma);
 
-        
         ler.close();
     }
 }
